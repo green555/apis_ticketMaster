@@ -65,7 +65,9 @@
 
           Each `li` should contain the name of the classification's *genre*.
         #}
-        <li>PLACEHOLDER</li>
+        {% for item in event_data['classifications'] %}
+        <li>{{ item['genre']['name'] }}</li>
+        {% endfor %}
       </ul>
     </div>
   </div>
